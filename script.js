@@ -18,6 +18,9 @@ envelope.addEventListener("click", () => {
     setTimeout( () => {
         document.querySelector(".letter-window").classList.add("open");
     },50);
+    // hide sammy image
+    document.getElementById("sammy-container").style.display = "none";
+    
 });
 
 // Logic to move the NO btn
@@ -60,7 +63,11 @@ noBtn.addEventListener("mouseover", () => {
 // YES is clicked
 
 yesBtn.addEventListener("click", () => {
-    title.textContent = "Yippeeee!";
+    title.textContent = "Yippeeeeeeeeeeeee!";
+
+    // play music
+    const audio = new Audio("audio.mp3");
+    audio.play();
 
     catImg.src = "cat_dance.gif";
 
@@ -69,4 +76,7 @@ yesBtn.addEventListener("click", () => {
     buttons.style.display = "none";
 
     finalText.style.display = "block";
+
+    document.getElementById("avni").style.display = "block";
+
 });

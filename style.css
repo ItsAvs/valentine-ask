@@ -8,6 +8,8 @@ body {
     font-family: "Pixelify Sans", sans-serif;
 }
 
+
+
 /* Envelope Screen */
 #envelope-container {
     text-align: center;
@@ -28,6 +30,23 @@ body {
 
 #envelope{
     width: 200px;
+    animation: pulse 1.5s infinite;
+    cursor: pointer;
+}
+
+#sammy-container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* put image above letter-spacing: */
+    position: absolute;
+    top: 20px;
+
+}
+
+#sammy{
+    width: 20%;
+    border-radius: 50%;
     animation: pulse 1.5s infinite;
     cursor: pointer;
 }
@@ -69,13 +88,14 @@ body {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 23px;
     margin:0;
 }
 
 p {
     font-size: 40px;
 }
+
 
 /* Cat */
 
